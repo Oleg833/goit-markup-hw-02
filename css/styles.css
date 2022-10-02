@@ -12,7 +12,7 @@ body {
 }
 .logo {
   color: var(--accent-color);
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -20,22 +20,10 @@ body {
 }
 .logo-span {
   color: #000000;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-.logo:hover,
-  .logo:focus,
-  .logo-span:hover,
-  .logo-span:focus{
-  color: var(--accent-color);
 }
 .link {
   text-decoration: none;
 }
-
 .list {
   list-style: none;
 }
@@ -175,21 +163,8 @@ body {
 .footer {
   background-color: var(--accent-bgd-color);
 }
-.logo-footer {
-  color: var(--accent-color);
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
 .footer-span {
   color: var(--primary-white-color);
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .address {
   font-style: normal;
@@ -213,20 +188,22 @@ body {
   .tel:focus,
   .map:hover,
   .map:focus,
-  .logo-footer:hover,
-  .logo-footer:focus,
+  .logo:hover,
+  .logo:focus,
+  .logo-span:hover,
+  .logo-span:focus,
   .footer-span:hover,
   .footer-span:focus {
   color: var(--accent-color);
 }
-.project-title {
+.portfolio-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2.00;
   letter-spacing: 0.06em;
 }
-.project-text {
+.portfolio-text {
   color: var(--accent-text-color);
   font-size: 16px;
   line-height: 1.88;
