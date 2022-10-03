@@ -9,6 +9,13 @@ body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
 }
 .logo {
   color: var(--accent-color);
@@ -16,16 +23,28 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;    
 }
 .logo-span {
   color: #000000;
 }
-.link {
-  text-decoration: none;
+.ul-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.list {
-  list-style: none;
+.nav {
+  color: var(--primary-text-color);
+}
+.auth {
+  color: var(--accent-text-color);
+}
+.link-current,
+  .nav:hover,
+  .nav:focus,
+  .auth:hover,
+  .auth:focus {
+  color: var(--accent-color);
 }
 .hero-studio {
   background-color: var(--accent-bgd-color);
@@ -38,66 +57,35 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.nav {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.link-current {
-  color: var(--accent-color);
-}
-.nav:hover,
-.nav:focus {
-  color: var(--accent-color);  
-}
-.auth {
-  color: var(--accent-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.auth:hover,
-  .auth:focus {
-  color: var(--accent-color);
-}
 .btn {
-  color: var(--primary-white-color);
-  background:var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: var(--accent-color) solid 2px;
   border-radius: 4px;
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
   cursor: pointer;
 }
-.btn:hover,
-.btn:focus {
+.btn-studio {
+  color: var(--primary-white-color);
+  background:var(--accent-color);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.btn-studio:hover,
+.btn-studio:focus {
   color: #188CE8;
 }
 .btn-portfolio {
   color: var(--primary-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: var(--accent-color) solid 2px;
-  border-radius: 4px;
-  font-style: inherit;
+  background-color: #F5F4FA;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
-.btn-portfolio:hover,
-.btn-portfolio:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
-.btn-portfolio-current{
+.btn-portfolio-current,
+  .btn-portfolio:hover,
+  .btn-portfolio:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -113,52 +101,42 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.features {
+  font-size: 14px;
+}
 .features-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;  
 }
 .features-text {
   color: var(--accent-text-color);
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-.work-item {
-  color: var(--primary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 .comand {
   background-color: #F5F4FA;
 }
-.comand-title {
+.work-title,
+  .comand-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
 }
 .card {
   background-color: var(--primary-white-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 .card-title {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .card-text {
   color: var(--accent-text-color);
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 .footer {
   background-color: var(--accent-bgd-color);
@@ -168,19 +146,15 @@ body {
 }
 .address {
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
 }
 .map {
   color: var(--primary-white-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 .mailto,
 .tel {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);  
 }
 .mailto:hover,
   .mailto:focus,
@@ -207,5 +181,4 @@ body {
   color: var(--accent-text-color);
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
